@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>GROUP PROJECT</title>
+        <style>
+            nav ul{
+                display: flex;background-color: #333;list-style-type: none;padding: 20px;
+            }
+            nav ul li{
+                margin-right: 20px;
+            }
+            nav ul li a{
+                text-decoration: none;color: white;font-weight: bold;
+            }
+            nav ul li a:hover{
+                color: #ffcc00;
+            }
+            body{
+                font-family:Arial, sans-serif;background-image: url('shttefan-viNPa2F7fnw-unsplash.jpg');min-height: 100hv;
+                text-align: center;justify-content: center;flex-wrap: wrap;align-items: flex-start;background-repeat: no-repeat;
+                background-size: cover;background-position: center;background-attachment: fixed;
+            }
+            body::before{
+                content:"";position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.3);z-index: -1;
+            }
+            figcaption{
+                font-style: italic;margin-top: 10px;color: #333;font-weight: bold;display: inline-block;
+            }
+            figcaption:hover{color: rgb(135, 215, 31);cursor: pointer;}
+            figure img{
+                border-radius: 5px;box-shadow: 0 8px 20px rgba(0,0,0,0.3);border: 5px solid white;
+            }
+            figure{
+                display: flex;flex-direction: column;align-items: center;gap: 30px;padding: 50px 20px;
+            }
+            ul li{
+                list-style-type: none;
+            }
+             .container{
+                display: flex;flex-wrap: wrap;justify-content: center;gap: 20px;
+             }
+             table{
+                align-items: center;justify-content: center;flex-wrap: wrap;display: block;
+             }
+             form{
+                background: grey;
+             }
+             label{align-items: center;justify-content: center;border-bottom: 10px;border-top: 5px;color: blue;
+             }
+             input{
+                align-items: center;justify-content: center;border-width: 4px;border-radius: 5px;border-color: magenta;
+                background: greenyellow;width: 300px;height: 30px;
+             }
+            </style>
+    </head>
+        <body>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="photos.html">Photos site</a>
+                        </li>
+                        <li>
+                            <a href="costs.html">Costs and sales</a>
+                        </li>
+                        <li>
+                            <a href="sign.html">Sign in</a>
+                        </li>
+                                <li>
+                                    <a href="enjoy.html">Enjoyments</a>
+                                </li>
+                                <li><a href="location.html">Location</a></li>
+                    </ul>
+                </nav>
+                <h3 style="color: blueviolet;">MKUPALA CHICKEN SUPPLY CONTACTS SITE</h3>
+                <p>You may contacts us through the various facilities of communication these include;-</p>
+                <ul>
+                    <li>MOBILE NUMBERS☎️📞</li>
+                    <li>Email address✉️📩</li>
+                    <li>Social media📺📺</li>
+                </ul>
+                <p>Through mobile phones you may infer the following conversations</p>
+                <div class="container">
+                <table border="1" style="border-radius: 5px;">
+                    <th>MOBILE</th>
+                    <th>RECEPTOR</th>
+                    <tr>
+                        <td>0792629808</td>
+                        <td>MANAGER</td>
+                    </tr>
+                    <tr>
+                        <td>0797273833</td>
+                        <td>C.E.O</td>
+                    </tr>
+                    <tr>
+                        <td>0767497690</td>
+                        <td>AMBASSADOR</td>
+                    </tr>
+                    <tr>
+                        <td>0756920658</td>
+                        <td>DIRECTOR</td>
+                    </tr>
+                    <tr>
+                        <td>0610808093</td>
+                        <td>IT SUPPORTER</td>
+                    </tr>
+                </table>
+                </div>
+                <p>Also you may contact us by through the email address<br>
+                    📩paullionja@gmail.com</p>
+                    <p style="color: rgb(213, 29, 29);">📝📝 any Missunderstanding you may enter your few details on the form below<br>
+                    for more absolutely HELP<br>
+                GET STARTED🕹️☺️</p>
+                <div class="container">
+                    <form id="myform" onsubmit="return vf(event)">
+                        <p>
+                            <label>EMAIL:</label>
+                            <input type="text" placeholder="you@gmail.com" required name="email">
+                        </p>
+                        <p>
+                            <label>NAME:</label>
+                            <input type="text" placeholder="CUSTOMER NAME" required name="username">
+                        </p>
+                        <p>
+                            <label>MOBILE NUMBER</label>
+                            <input type="text" placeholder="CUSTOMER CONTACTS" required name="phone">
+                        </p>
+                        <p>
+                            <label>ENTER</label>
+                            <input type="submit" placeholder="SUBMIT">
+                        </p>
+                        <p id="y"></p>
+                    </form> 
+                </div>
+                    <script>
+                        function vf(event){
+                            event.preventDefault();
+                            document.getElementById('y').innerHTML="Get quickly help through 0611273833";
+                            y.document.getElementById('y').style.color="green";
+                        }
+                    </script>
+                    <p style="color: rgb(242, 103, 3);">🙏🙏📞📞CONTACT US MCS FOR BETTER CHICKENS OF ALL KIND</p>
+                    <audio src="Ringing voice.aac" controls autoplay style="color: darkorange;">CALL US</audio>
+            </body>
+</html>             

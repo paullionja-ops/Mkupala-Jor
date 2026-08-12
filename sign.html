@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>GROUP PROJECT</title>
+        <style>
+            nav ul{
+                display: flex;background-color: #333;list-style-type: none;padding: 20px;
+            }
+            nav ul li{
+                margin-right: 20px;
+            }
+            nav ul li a{
+                text-decoration: none;color: white;font-weight: bold;
+            }
+            nav ul li a:hover{
+                color: #ffcc00;
+            }
+            body{
+                font-family:Arial, sans-serif;background-image: url('dominik-schroder-FIKD9t5_5zQ-unsplash.jpg');min-height: 100hv;
+                text-align: center;justify-content: center;flex-wrap: wrap;align-items: flex-start;background-repeat: no-repeat;
+                background-size: cover;background-position: center;background-attachment: fixed;
+            }
+            body::before{
+                content:"";position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.3);z-index: -1;
+            }
+            figcaption{
+                font-style: italic;margin-top: 10px;color: #333;font-weight: bold;display: inline-block;
+            }
+            figcaption:hover{color: rgb(135, 215, 31);cursor: pointer;}
+            figure img{
+                border-radius: 5px;box-shadow: 0 8px 20px rgba(0,0,0,0.3);border: 5px solid white;
+            }
+            figure{
+                display: flex;flex-direction: column;align-items: center;gap: 30px;padding: 50px 20px;
+            }
+            ul li{
+                list-style-type: none;
+            }
+             .container{
+                display: flex;flex-wrap: wrap;justify-content: center;gap: 20px;
+             }
+             table{
+                align-items: center;justify-content: center;flex-wrap: wrap;display: block;
+             }
+             form{
+                background: grey;
+             }
+             label{align-items: center;justify-content: center;border-bottom: 10px;border-top: 5px;color: blue;
+             }
+             input{
+                align-items: center;justify-content: center;border-width: 2px;border-radius: 5px;border-color: magenta;
+                background: rgb(115, 159, 50);width: 300px;height: 30px;
+             }
+             img{
+                width: 300px;height: 300px;
+             }
+             label{
+                align-items: center;justify-content: center;border-bottom: 10px;border-top: 5px;
+             }
+             select{
+                background: blue;width: 300px;height: 30px;border-radius: 4px;
+             }
+            </style>
+    </head>
+            <body>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="photos.html">Photos site</a>
+                        </li>
+                        <li>
+                            <a href="costs.html">Costs and sales</a>
+                        </li>
+                        <li>
+                            <a href="sign.html">Sign in</a>
+                        </li>
+                                <li>
+                                    <a href="enjoy.html">Enjoyments</a>
+                                </li>
+                                <li><a href="location.html">Location</a></li>
+                    </ul>
+                </nav>
+                <h2 style="color: blueviolet;">MCS THE SITE OF ENTERING THE HOME PAGE</h2>
+                <h3 style="color: maroon;">SIGN IN HERE</h3>
+                <p>You may enter your log in credentials to sign in on our home page of CMS</p>
+                <div class="container">
+                <form action="index.html">
+                   <p>
+                    <label>USERNAME</label>
+                    <input type="text" placeholder="USERNAME" name="username" required>
+                   </p>
+                   <p>
+                    <label>PASSWORD</label>
+                    <input type="password" placeholder="123ywrwe54" name="password" required>
+                   </p>
+                   <p>
+                   <label>MOBILE NUMBER</label>
+                   <input type="number" placeholder="07xxxxxxxx" name="phone" required >
+                </p>
+                <p>
+                    <label>CHOOSE BRANCH</label>
+                    <select>
+                        <option value="1">LIO-TOWN</option>
+                        <option value="2">MBEYA-TOWN</option>
+                        <option value="3">MORO-TOWN</option>
+                        <option value="4">DAR-CENTER</option>
+                        <option value="5">DELIVERY</option>
+                    </select>
+                </p>
+                <p>
+                    <label>SUBMIT INFO</label>
+                    <input type="submit" placeholder="LOG IN">
+                </p>
+                <p id="y"></p>
+                </form>
+                </div>
+                <script>
+                    function vf(event){
+                    event.preventDefault();
+                    document.getElementById('y').innerHTML="✅successfully logged, preview in Home page";
+                    }
+                </script>
+            </body>
+</html>
